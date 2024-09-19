@@ -7,37 +7,53 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur v
 Node.js (version 14 ou supérieure recommandée)
 npm ou yarn
 🚀 Installation
+
 1. Cloner le dépôt
 Commencez par cloner ce dépôt sur votre machine locale :
 
 bash
+
 Copier le code
+
 git clone https://github.com/votre-utilisateur/votre-repo.git
+
 cd votre-repo
+
 2. Installation des dépendances du frontend
 Dans le dossier frontend, installez les dépendances nécessaires :
 
 bash
 Copier le code
+
 cd frontend
+
 npm install
-# ou si vous utilisez yarn
+
+ou si vous utilisez yarn
 yarn install
+
 3. Installation des dépendances du backend
 Accédez au dossier backend et installez les dépendances nécessaires au backend Node.js :
 
 bash
 Copier le code
+
 cd ../backend
+
 npm install
-# ou si vous utilisez yarn
+
+ou si vous utilisez yarn
+
 yarn install
+
 4. Configuration des variables d'environnement
 Créez un fichier .env dans le dossier backend et ajoutez les variables d'environnement suivantes :
 
 bash
+
 Copier le code
-# .env
+
+ .env
 
 # Informations d'authentification pour Nodemailer (Gmail)
 EMAIL_USER=votre-email@gmail.com
