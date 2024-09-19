@@ -20,12 +20,12 @@ export default {
             modalData: {}, // Stocker les données du projet pour la modal
             slides: [
                 {
-                    title: 'Votre Nom',
+                    title: 'Gabin SALUCCI',
                     image: require('@/assets/profil.png'),
                     description: 'Développeur web passionné, spécialisé dans la création de sites web modernes, réactifs et centrés sur l\'utilisateur.',
                 },
                 {
-                    title: 'Projet 1: Titre du Projet',
+                    title: 'Projet 1: ProphetieGen',
                     image: require('@/assets/Project1.png'),
                     description: 'Description du projet 1. Utilisation de technologies comme VueJS, HTML, CSS...',
                     date: '12/01/2024',
@@ -34,11 +34,11 @@ export default {
                     githubLink: 'https://github.com/votreprofil/projet1',
                 },
                 {
-                    title: 'Projet 2: Titre du Projet',
+                    title: 'Projet 2: Portfolio,
                     image: require('@/assets/Project2.png'),
                     description: 'Description du projet 2. Utilisation de technologies comme React, Node.js...',
                     date: '25/05/2024',
-                    technologies: 'React, Node.js, Express',
+                    technologies: 'VueJs, Node.js, html, css',
                     projectLink: 'https://example.com/projet2',
                     githubLink: '',
                 },
