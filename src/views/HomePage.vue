@@ -26,8 +26,8 @@
               :src="slide.image" 
               :alt="slide.title" 
               :class="{
-                'project-image': slide.title !== 'Votre Nom', 
-                'profile-image': slide.title === 'Votre Nom'
+                'project-image': slide.title !== 'gabin salucci', 
+                'profile-image': slide.title === 'gabin salucci'
               }"
             />
             <p>{{ slide.description }}</p>

@@ -81,7 +81,7 @@
 
 /* Styles spécifiques pour l'image de profil */
 .profile-image {
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 8px;
     margin-bottom: 20px;
     display: block;
