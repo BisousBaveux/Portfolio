@@ -1,0 +1,66 @@
+/* Fond et typographie globale */
+body {
+    background-color: #333333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-size: 16px;
+    color: #f7f5f5;
+    line-height: 1.6;
+}
+
+/* Styles pour les titres */
+h1 {
+    font-size: 2.5rem;
+    color: #FF6700;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #FF6700;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #FF6700;
+    margin-bottom: 10px;
+}
+
+
+
+/* Styles pour les paragraphes */
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Styles pour les boutons */
+button {
+    background-color: #FF6700;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* Styles des liens globaux */
+a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555;
+    text-decoration: underline;
+}
