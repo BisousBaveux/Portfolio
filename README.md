@@ -1,22 +1,21 @@
-Portfolio Project
-Ce projet est un portfolio personnel développé avec Vue.js et un backend Node.js avec Nodemailer pour envoyer des e-mails via un formulaire de contact.
+📂 Portfolio Project
+Ce projet est un portfolio personnel, développé avec Vue.js (ou React) et un backend Node.js avec Nodemailer pour gérer un formulaire de contact.
 
+🛠️ Prérequis
+Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur votre machine :
 
-Prérequis
-Avant de pouvoir installer et exécuter ce projet, assurez-vous d'avoir les éléments suivants installés sur votre machine :
-
-Node.js (version 14 ou plus recommandée)
+Node.js (version 14 ou supérieure recommandée)
 npm ou yarn
-Installation
-1. Clonez le dépôt
-Commencez par cloner le dépôt GitHub sur votre machine locale.
+🚀 Installation
+1. Cloner le dépôt
+Commencez par cloner ce dépôt sur votre machine locale :
 
 bash
 Copier le code
-git clone https://github.com/username/nom-du-repo.git
-cd nom-du-repo
-2. Installez les dépendances du frontend
-Le projet utilise Vue.js (ou React, si vous l'utilisez), alors vous devrez installer les dépendances du frontend.
+git clone https://github.com/votre-utilisateur/votre-repo.git
+cd votre-repo
+2. Installation des dépendances du frontend
+Dans le dossier frontend, installez les dépendances nécessaires :
 
 bash
 Copier le code
@@ -24,8 +23,8 @@ cd frontend
 npm install
 # ou si vous utilisez yarn
 yarn install
-3. Installez les dépendances du backend
-Accédez au dossier backend et installez les dépendances nécessaires pour le serveur backend Node.js.
+3. Installation des dépendances du backend
+Accédez au dossier backend et installez les dépendances nécessaires au backend Node.js :
 
 bash
 Copier le code
@@ -34,52 +33,65 @@ npm install
 # ou si vous utilisez yarn
 yarn install
 4. Configuration des variables d'environnement
-Dans le dossier backend, créez un fichier .env à la racine et ajoutez les variables suivantes :
+Créez un fichier .env dans le dossier backend et ajoutez les variables d'environnement suivantes :
 
 bash
 Copier le code
-# Fichier .env
+# .env
 
-# Informations de votre compte Gmail (ou autre service SMTP) pour l'envoi d'e-mails
+# Informations d'authentification pour Nodemailer (Gmail)
 EMAIL_USER=votre-email@gmail.com
-EMAIL_PASS=votre-mot-de-passe-d-application
-EMAIL_RECEIVER=destinataire@gmail.com
+EMAIL_PASS=votre-mot-de-passe-application
+EMAIL_RECEIVER=destinataire@example.com
 
-# Port sur lequel le backend tournera
+# Port du serveur backend
 PORT=3000
-EMAIL_USER : Votre adresse Gmail (ou autre service SMTP) à partir de laquelle les e-mails seront envoyés.
-EMAIL_PASS : Le mot de passe d'application que vous devez générer à partir de Gmail (ou le mot de passe SMTP si vous utilisez un autre service).
-EMAIL_RECEIVER : L'adresse e-mail qui recevra les messages envoyés via le formulaire de contact.
-PORT : Le port sur lequel le backend sera exécuté (par défaut 3000).
-5. Lancer le serveur backend
-Une fois toutes les dépendances installées et le fichier .env configuré, lancez le serveur backend :
+5. Lancement du serveur backend
+Démarrez le serveur backend Node.js :
 
 bash
 Copier le code
 npm start
-# ou si vous utilisez yarn
+# ou avec yarn
 yarn start
-Le serveur backend devrait être en cours d'exécution sur http://localhost:3000.
+Le serveur backend sera accessible sur http://localhost:3000.
 
-6. Lancer le serveur frontend
-Dans le dossier frontend, lancez le serveur de développement :
+6. Lancement du serveur frontend
+Lancez maintenant le serveur frontend :
 
 bash
 Copier le code
+cd ../frontend
 npm run serve
-# ou si vous utilisez yarn
+# ou avec yarn
 yarn serve
-Le serveur frontend sera accessible à l'adresse http://localhost:8080.
+Le serveur frontend sera accessible sur http://localhost:8080.
 
-Utilisation
-Après avoir démarré le frontend et le backend, vous pouvez accéder à l'application à l'adresse http://localhost:8080. Le formulaire de contact permet d'envoyer des e-mails via le serveur backend.
+📩 Utilisation
+Accédez à http://localhost:8080 pour voir le portfolio en local.
+Le formulaire de contact permettra d'envoyer un e-mail via le backend à l'adresse définie dans la variable EMAIL_RECEIVER.
+🛑 Problèmes fréquents
+1. Problèmes d'envoi d'e-mails avec Gmail
+Si l'envoi d'e-mails échoue, vérifiez que vous avez activé les mots de passe d'application pour votre compte Google. Consultez la documentation de Google pour plus d'informations.
 
-Problèmes courants
-Problèmes d'envoi d'e-mails avec Gmail : Assurez-vous d'avoir activé les mots de passe d'application pour votre compte Gmail si vous avez activé l'authentification à deux facteurs. Consultez la documentation de Google sur les mots de passe d'application pour plus d'informations.
+2. Problèmes liés au CORS
+Si vous rencontrez des erreurs CORS, assurez-vous que le middleware CORS est configuré correctement dans le backend :
 
-CORS : Si vous rencontrez des erreurs de type CORS, assurez-vous que le middleware CORS est correctement configuré dans le backend (app.use(cors());).
+javascript
+Copier le code
+const cors = require('cors');
+app.use(cors());
+🤝 Contribuer
+Les contributions sont les bienvenues ! Pour contribuer :
 
-Contribution
-Si vous souhaitez contribuer à ce projet, veuillez ouvrir une pull request ou soumettre un problème.
+Forkez ce projet
+Créez une nouvelle branche (git checkout -b ma-nouvelle-fonctionnalité)
+Committez vos changements (git commit -m 'Ajouter une fonctionnalité')
+Poussez vers la branche (git push origin ma-nouvelle-fonctionnalité)
+Ouvrez une pull request
 
-Gabin SALUCCI
+📝 gabin salucci
+
+📜 Licence
+Ce projet est sous licence MIT.
+
