@@ -68,7 +68,7 @@ Démarrez le serveur backend Node.js :
 bash
 Copier le code
 npm start
-# ou avec yarn
+ou avec yarn
 yarn start
 Le serveur backend sera accessible sur http://localhost:3000.
 
@@ -79,7 +79,7 @@ bash
 Copier le code
 cd ../frontend
 npm run serve
-# ou avec yarn
+ou avec yarn
 yarn serve
 Le serveur frontend sera accessible sur http://localhost:8080.
 
